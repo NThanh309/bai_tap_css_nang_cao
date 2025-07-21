@@ -1,0 +1,112 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Layout tổng */
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f1f5f9;
+  flex-wrap: wrap;
+
+}
+
+/* Form */
+.form-container {
+  flex: 1;
+  min-width: 300px;
+  background-color: #e6f2ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input,
+form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:hover,
+form select:hover,
+form textarea:hover {
+  background-color: #f0f8ff;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  transition: 0.2s ease-in-out;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Bảng danh sách */
+.table-container {
+  flex: 2;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+table tbody tr:hover {
+  background-color: #eaf4ff;
+  transition: 0.2s;
+}
+
+/* Responsive: stack dọc khi mobile */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+}

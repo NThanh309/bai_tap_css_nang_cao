@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTH CSS nâng cao</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <h1>Quản lý Sinh viên</h1>
+  </nav>
+
+  <div class="main-container">
+    
+    <div class="form-container">
+      <h2>Đăng ký Sinh viên</h2>
+      <form>
+        <label>Họ tên</label>
+        <input type="text" required />
+
+        <label>Ngày sinh</label>
+        <input type="date" required />
+
+        <label>Giới tính</label>
+        <select required>
+          <option value="">-- Chọn giới tính --</option>
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+        </select>
+
+        <label>Email</label>
+        <input type="email" required />
+
+        <label>Số điện thoại</label>
+        <input type="tel" required />
+
+        <label>Khoa</label>
+        <input type="text" required />
+
+        <label>Địa chỉ</label>
+        <input type="text" required />
+
+        <button type="submit">Đăng ký</button>
+      </form>
+    </div>
+
+
+    <div class="table-container">
+      <h2>Danh sách Sinh viên</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Họ tên</th>
+              <th>Ngày sinh</th>
+              <th>Giới tính</th>
+              <th>Email</th>
+              <th>SĐT</th>
+              <th>Khoa</th>
+              <th>Địa chỉ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nguyễn Văn A</td>
+              <td>2003-01-15</td>
+              <td>Nam</td>
+              <td>a@gmail.com</td>
+              <td>0912345678</td>
+              <td>CNTT</td>
+              <td>Hà Nội</td>
+            </tr>
+            <tr>
+              <td>Trần Thị B</td>
+              <td>2004-03-22</td>
+              <td>Nữ</td>
+              <td>b@yahoo.com</td>
+              <td>0987654321</td>
+              <td>Kinh tế</td>
+              <td>Đà Nẵng</td>
+            </tr>
+             <tr>
+              <td>Đặng Văn C</td>
+              <td>2004-05-17</td>
+              <td>Nam</td>
+              <td>c@yahoo.com</td>
+              <td>0976456983</td>
+              <td>Kinh tế</td>
+              <td>Hải Phòng</td>
+            </tr>
+             <tr>
+              <td>Phạm Thị D</td>
+              <td>2003-09-29</td>
+              <td>Nữ</td>
+              <td>d@yahoo.com</td>
+              <td>0926578473</td>
+              <td>Luật</td>
+              <td>Hà Nội</td>
+            </tr>
+             <tr>
+              <td>Phùng Thị E</td>
+              <td>2004-11-08</td>
+              <td>Nữ</td>
+              <td>e@yahoo.com</td>
+              <td>0933986279</td>
+              <td>CNTT</td>
+              <td>Hải Phòng</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
